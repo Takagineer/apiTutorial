@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
+
+// POSTメソッド
 app.post("/booklog", (req, res) => {
   const booklog = req.body;
   // ↓エラーの際のレスポンス
@@ -18,6 +20,8 @@ app.post("/booklog", (req, res) => {
     booklog: booklog,
   });
 });
+
+//GETメソッド
 
 app.listen(port, () => {
   console.log("listenできてます");
