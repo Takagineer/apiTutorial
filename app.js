@@ -22,6 +22,7 @@ app.post("/booklog", (req, res) => {
 });
 
 //GETメソッド
+app.get("/booklog", (req, res) => {});
 
 app.listen(port, () => {
   console.log("listenできてます");
